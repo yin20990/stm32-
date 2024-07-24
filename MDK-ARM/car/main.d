@@ -31,7 +31,7 @@ car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 car\main.o: ../Inc/i2c.h
 car\main.o: ../Inc/tim.h
 car\main.o: ../Inc/gpio.h
-car\main.o: ../Inc/LED.h
-car\main.o: ../Inc/SERVO.h
+car\main.o: ../Inc/led.h
+car\main.o: ../Inc/servo.h
 car\main.o: ../Inc/oled.h
 car\main.o: ../Inc/motor.h

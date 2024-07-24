@@ -25,8 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "LED.h"
-#include "SERVO.h"
+#include "led.h"
+#include "servo.h"
 #include "oled.h"
 #include "motor.h"
 /* USER CODE END Includes */
@@ -92,6 +92,7 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   MX_TIM2_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 	MOTOR_Init();
 	SERVO_Init();
@@ -105,10 +106,11 @@ int main(void)
 	uint8_t a[]="silver_yin";
 	
 	OLED_ShowString(10,10,a,sizeof(a));
-  while (1)
+	while (1)
   {
 			LED0_TOGGLE();
 			HAL_Delay(499);
+			
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

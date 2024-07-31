@@ -28,10 +28,13 @@ car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+car\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 car\main.o: ../Inc/i2c.h
 car\main.o: ../Inc/tim.h
+car\main.o: ../Inc/usart.h
 car\main.o: ../Inc/gpio.h
 car\main.o: ../Inc/led.h
 car\main.o: ../Inc/servo.h
 car\main.o: ../Inc/oled.h
 car\main.o: ../Inc/motor.h
+car\main.o: ../Inc/bluetooth.h

@@ -87,3 +87,14 @@ void Car_Stop()
 		MOTOR_SetLeftSpeed(0);
 }
 
+void Go_Ahead()
+{
+		MOTOR_SetRightSpeed(70);
+		MOTOR_SetLeftSpeed(70);
+}
+
+void Go_Back()
+{
+		MOTOR_SetRightSpeed(-70);
+		MOTOR_SetLeftSpeed(-70);
+}

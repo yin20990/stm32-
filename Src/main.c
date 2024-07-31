@@ -21,6 +21,7 @@
 #include "main.h"
 #include "i2c.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -29,6 +30,7 @@
 #include "servo.h"
 #include "oled.h"
 #include "motor.h"
+#include "bluetooth.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,19 +95,25 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	MOTOR_Init();
 	SERVO_Init();
+	Bluetooth_Init();
+	
 	OLED_Init();
 	OLED_Display_On();
 	OLED_Clear();
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	uint8_t a[]="silver_yin";
-	
+
 	OLED_ShowString(10,10,a,sizeof(a));
+	
+	
 	while (1)
   {
 			LED0_TOGGLE();

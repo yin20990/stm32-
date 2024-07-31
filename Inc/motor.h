@@ -9,6 +9,8 @@ void MOTOR_SetLeftSpeed(int8_t speed);
 void MOTOR_SetRightSpeed(int8_t speed);
 
 void Car_Stop(void);
+void Go_Back(void);
+void Go_Ahead(void);
 
 //×ªÏò
 void Self_Left(void);

@@ -38,3 +38,4 @@ car\main.o: ../Inc/servo.h
 car\main.o: ../Inc/oled.h
 car\main.o: ../Inc/motor.h
 car\main.o: ../Inc/bluetooth.h
+car\main.o: ../Inc/sr04.h

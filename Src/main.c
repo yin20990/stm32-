@@ -31,6 +31,7 @@
 #include "oled.h"
 #include "motor.h"
 #include "bluetooth.h"
+#include "sr04.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,6 +97,8 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_USART1_UART_Init();
+  MX_TIM1_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 	MOTOR_Init();
 	SERVO_Init();
@@ -110,14 +113,20 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	uint8_t a[]="silver_yin";
-
-	OLED_ShowString(10,10,a,sizeof(a));
+	OLED_ShowString(0,0,a,sizeof(a));
+	
+	uint8_t b[]="dis:";
+	uint8_t cm[]="cm";
+	OLED_ShowString(10,10,b,sizeof(b));
+	OLED_ShowString(60,10,cm,sizeof(cm));
+	
 	
 	
 	while (1)
   {
 			LED0_TOGGLE();
-			HAL_Delay(499);
+			HAL_Delay(99);
+			Trigger_signal();
 			
     /* USER CODE END WHILE */
 

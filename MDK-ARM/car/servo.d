@@ -1,5 +1,5 @@
 car\servo.o: ..\Src\servo.c
-car\servo.o: ../Inc/tim.h
+car\servo.o: ../Inc/servo.h
 car\servo.o: ../Inc/main.h
 car\servo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 car\servo.o: ../Inc/stm32f1xx_hal_conf.h
@@ -30,4 +30,5 @@ car\servo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 car\servo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 car\servo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 car\servo.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+car\servo.o: ../Inc/tim.h
 car\servo.o: ../Inc/gpio.h

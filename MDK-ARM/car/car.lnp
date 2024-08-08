@@ -5,6 +5,7 @@
 "car\led.o"
 "car\motor.o"
 "car\bluetooth.o"
+"car\sr04.o"
 "car\main.o"
 "car\gpio.o"
 "car\i2c.o"

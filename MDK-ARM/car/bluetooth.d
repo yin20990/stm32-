@@ -33,3 +33,5 @@ car\bluetooth.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 car\bluetooth.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 car\bluetooth.o: ../Inc/motor.h
 car\bluetooth.o: ../Inc/servo.h
+car\bluetooth.o: ../Inc/tim.h
+car\bluetooth.o: ../Inc/gpio.h
